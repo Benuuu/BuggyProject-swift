@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField?
     @IBOutlet weak var imageView: UIImageView?
     @IBOutlet weak var validImageView: UIView?
+    var searches: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,14 @@ class ViewController: UIViewController {
     // MARK: Actions
     // TODO: Rename this
     @IBAction func bTap() {
-        if isValidString(textField?.text) {
+
+        guard let search = textField?.text else {
+            return
+        }
+
+        searches.append(search)
+
+        if isValidString(search) {
             imageView?.setImageWithURLRequest(self.imgurURLRequest(),
                 placeholderImage: nil,
                 success: { (request, response, image) -> Void in
