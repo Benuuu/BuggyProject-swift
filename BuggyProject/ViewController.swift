@@ -25,31 +25,9 @@ class ViewController: UIViewController {
     // MARK: Actions
     // TODO: Rename this
     @IBAction func bTap() {
-
-        guard let search = textField?.text else {
-            return
-        }
-
-        searches.append(search)
-
-        if isValidString(search) {
-            imageView?.setImageWithURLRequest(self.imgurURLRequest(),
-                placeholderImage: nil,
-                success: { (request, response, image) -> Void in
-                    print("success!")
-                    self.imageView?.image = image
-                },
-                failure: { (request, response, error) -> Void in
-                    print("failure!")
-                }
-            )
-        }
     }
 
     @IBAction func searchesTapped() {
-        let searchesViewController = SearchesViewController(nibName: nil, bundle: nil)
-        searchesViewController.searches = searches
-        self.presentViewController(searchesViewController, animated: true, completion: nil)
     }
 
     // MARK: Helpers
