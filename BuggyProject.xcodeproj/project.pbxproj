@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CD705C3F390A469474DB46EE /* Pods_BuggyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4127FFE9B9DB84898140F0C3 /* Pods_BuggyProject.framework */; };
+		FFC1D22E1C3E217600630992 /* SearchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1D22D1C3E217600630992 /* SearchesViewController.swift */; };
+		FFC1D2301C3EB7A700630992 /* SearchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */; };
 		FFEE79021C3DB91100617AE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE79011C3DB91100617AE4 /* AppDelegate.swift */; };
 		FFEE79041C3DB91100617AE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE79031C3DB91100617AE4 /* ViewController.swift */; };
 		FFEE79071C3DB91100617AE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEE79051C3DB91100617AE4 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		4127FFE9B9DB84898140F0C3 /* Pods_BuggyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuggyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC08214291AF8FA8D0B0164F /* Pods-BuggyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EF99B9FBF871463C32120A03 /* Pods-BuggyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.release.xcconfig"; sourceTree = "<group>"; };
+		FFC1D22D1C3E217600630992 /* SearchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesViewController.swift; sourceTree = "<group>"; };
+		FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchesViewController.xib; sourceTree = "<group>"; };
 		FFEE78FE1C3DB91100617AE4 /* BuggyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuggyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEE79011C3DB91100617AE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFEE79031C3DB91100617AE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			children = (
 				FFEE79011C3DB91100617AE4 /* AppDelegate.swift */,
 				FFEE79031C3DB91100617AE4 /* ViewController.swift */,
+				FFC1D22D1C3E217600630992 /* SearchesViewController.swift */,
+				FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */,
 				FFEE79051C3DB91100617AE4 /* Main.storyboard */,
 				FFEE79081C3DB91100617AE4 /* Assets.xcassets */,
 				FFEE790A1C3DB91100617AE4 /* LaunchScreen.storyboard */,
@@ -151,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC1D2301C3EB7A700630992 /* SearchesViewController.xib in Resources */,
 				FFEE790C1C3DB91100617AE4 /* LaunchScreen.storyboard in Resources */,
 				FFEE79091C3DB91100617AE4 /* Assets.xcassets in Resources */,
 				FFEE79071C3DB91100617AE4 /* Main.storyboard in Resources */,
@@ -214,6 +221,7 @@
 			files = (
 				FFEE79041C3DB91100617AE4 /* ViewController.swift in Sources */,
 				FFEE79021C3DB91100617AE4 /* AppDelegate.swift in Sources */,
+				FFC1D22E1C3E217600630992 /* SearchesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

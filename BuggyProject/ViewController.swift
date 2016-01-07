@@ -45,6 +45,13 @@ class ViewController: UIViewController {
             )
         }
     }
+
+    @IBAction func searchesTapped() {
+        let searchesViewController = SearchesViewController(nibName: nil, bundle: nil)
+        searchesViewController.searches = searches
+        self.presentViewController(searchesViewController, animated: true, completion: nil)
+    }
+
     // MARK: Helpers
 
     func imgurURLRequest() -> NSURLRequest {

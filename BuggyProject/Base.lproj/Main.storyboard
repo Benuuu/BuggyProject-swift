@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,7 +27,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwV-oD-Wdd">
-                                <rect key="frame" x="138" y="169.5" width="60" height="60"/>
+                                <rect key="frame" x="138" y="170" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="j4I-Nh-NVL"/>
@@ -47,17 +48,26 @@
                                     <action selector="bTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZj-VX-Bfl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0P-Ik-RNN">
+                                <rect key="frame" x="530" y="28" width="50" height="30"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <action selector="searchesTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="GV8-tN-vXc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SHj-Qa-Kmn" firstAttribute="centerX" secondItem="V8C-yi-uTd" secondAttribute="centerX" id="5St-w5-HVO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TJf-rz-5tr" secondAttribute="bottom" constant="16" id="QyZ-Z3-NQX"/>
                             <constraint firstItem="HwV-oD-Wdd" firstAttribute="centerY" secondItem="V8C-yi-uTd" secondAttribute="centerY" id="UOt-2I-b02"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p0P-Ik-RNN" secondAttribute="trailing" id="W8N-ms-oyj"/>
                             <constraint firstItem="V8C-yi-uTd" firstAttribute="leading" secondItem="HwV-oD-Wdd" secondAttribute="trailing" constant="54" id="bcj-7p-T32"/>
                             <constraint firstItem="TJf-rz-5tr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cn5-p7-3dR"/>
                             <constraint firstItem="SHj-Qa-Kmn" firstAttribute="top" secondItem="V8C-yi-uTd" secondAttribute="bottom" constant="19" id="hd9-uO-Iai"/>
                             <constraint firstItem="V8C-yi-uTd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jlU-RN-ztK"/>
                             <constraint firstItem="V8C-yi-uTd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="mQx-tZ-41i"/>
+                            <constraint firstItem="p0P-Ik-RNN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pe1-CM-x7n"/>
                         </constraints>
                     </view>
                     <connections>
