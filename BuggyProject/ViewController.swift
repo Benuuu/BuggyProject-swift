@@ -23,12 +23,20 @@ class ViewController: UIViewController {
     // MARK: Actions
     // TODO: Rename this
     @IBAction func bTap() {
-
+        if isValidString(textField?.text) {
+            imageView?.setImageWithURLRequest(self.imgurURLRequest(), placeholderImage: nil, success: { (request, response, image) -> Void in
+                print("success!")
+                self.imageView?.image = image
+                }, failure: { (request, response, error) -> Void in
+                    print("failure!")
+            })
+        }
     }
     // MARK: Helpers
 
     func imgurURLRequest() -> NSURLRequest {
-        let urlString = "http://i.imgur.com/\(self.textField?.text)).png"
+        // sample: WPOBwNC
+        let urlString = String(format: "http://i.imgur.com/%@.png", (textField?.text)!)
         return NSURLRequest(URL: NSURL(string: urlString)!)
     }
 
