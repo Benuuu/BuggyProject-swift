@@ -25,12 +25,16 @@ class ViewController: UIViewController {
     // TODO: Rename this
     @IBAction func bTap() {
         if isValidString(textField?.text) {
-            imageView?.setImageWithURLRequest(self.imgurURLRequest(), placeholderImage: nil, success: { (request, response, image) -> Void in
-                print("success!")
-                self.imageView?.image = image
-                }, failure: { (request, response, error) -> Void in
+            imageView?.setImageWithURLRequest(self.imgurURLRequest(),
+                placeholderImage: nil,
+                success: { (request, response, image) -> Void in
+                    print("success!")
+                    self.imageView?.image = image
+                },
+                failure: { (request, response, error) -> Void in
                     print("failure!")
-            })
+                }
+            )
         }
     }
     // MARK: Helpers
