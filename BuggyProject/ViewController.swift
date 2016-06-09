@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         validImageView?.backgroundColor = UIColor.redColor()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldDidChange:", name: UITextFieldTextDidChangeNotification , object: self.textField);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.textFieldDidChange(_:)), name: UITextFieldTextDidChangeNotification , object: self.textField);
     }
 
     // MARK: Actions

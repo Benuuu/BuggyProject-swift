@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD705C3F390A469474DB46EE /* Pods_BuggyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4127FFE9B9DB84898140F0C3 /* Pods_BuggyProject.framework */; };
+		04DAF496639AE9CB954A10EE /* Pods_BuggyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B71C539461D028B89F1CB7 /* Pods_BuggyProject.framework */; };
 		FFC1D22E1C3E217600630992 /* SearchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1D22D1C3E217600630992 /* SearchesViewController.swift */; };
 		FFC1D2301C3EB7A700630992 /* SearchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */; };
 		FFEE79021C3DB91100617AE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE79011C3DB91100617AE4 /* AppDelegate.swift */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4127FFE9B9DB84898140F0C3 /* Pods_BuggyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuggyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC08214291AF8FA8D0B0164F /* Pods-BuggyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.debug.xcconfig"; sourceTree = "<group>"; };
-		EF99B9FBF871463C32120A03 /* Pods-BuggyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.release.xcconfig"; sourceTree = "<group>"; };
+		18B45433658D43B219CC1D30 /* Pods-BuggyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.release.xcconfig"; sourceTree = "<group>"; };
+		6A4F065FB78AF26FF7C7C8D1 /* Pods-BuggyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuggyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B71C539461D028B89F1CB7 /* Pods_BuggyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuggyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1D22D1C3E217600630992 /* SearchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesViewController.swift; sourceTree = "<group>"; };
 		FFC1D22F1C3EB7A700630992 /* SearchesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchesViewController.xib; sourceTree = "<group>"; };
 		FFEE78FE1C3DB91100617AE4 /* BuggyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuggyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,26 +38,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD705C3F390A469474DB46EE /* Pods_BuggyProject.framework in Frameworks */,
+				04DAF496639AE9CB954A10EE /* Pods_BuggyProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F3371C0358D25A9DA13DEBA /* Pods */ = {
+		582DFE71A9BE7D28C4113D33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC08214291AF8FA8D0B0164F /* Pods-BuggyProject.debug.xcconfig */,
-				EF99B9FBF871463C32120A03 /* Pods-BuggyProject.release.xcconfig */,
+				6A4F065FB78AF26FF7C7C8D1 /* Pods-BuggyProject.debug.xcconfig */,
+				18B45433658D43B219CC1D30 /* Pods-BuggyProject.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C20C7FC2CA542835A52B8630 /* Frameworks */ = {
+		AB872565D97FCD00ED2865C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4127FFE9B9DB84898140F0C3 /* Pods_BuggyProject.framework */,
+				D5B71C539461D028B89F1CB7 /* Pods_BuggyProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -67,8 +67,8 @@
 			children = (
 				FFEE79001C3DB91100617AE4 /* BuggyProject */,
 				FFEE78FF1C3DB91100617AE4 /* Products */,
-				5F3371C0358D25A9DA13DEBA /* Pods */,
-				C20C7FC2CA542835A52B8630 /* Frameworks */,
+				582DFE71A9BE7D28C4113D33 /* Pods */,
+				AB872565D97FCD00ED2865C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFEE79101C3DB91100617AE4 /* Build configuration list for PBXNativeTarget "BuggyProject" */;
 			buildPhases = (
-				C75AD32EFCA51D87AAEF9568 /* Check Pods Manifest.lock */,
+				03E33A5A941EBE77D891E8A2 /* [CP] Check Pods Manifest.lock */,
 				FFEE78FA1C3DB91100617AE4 /* Sources */,
 				FFEE78FB1C3DB91100617AE4 /* Frameworks */,
 				FFEE78FC1C3DB91100617AE4 /* Resources */,
-				FF8F02A9AED594BE5FB51CEA /* Embed Pods Frameworks */,
-				61B5A41E62BCA0FDC221D224 /* Copy Pods Resources */,
+				89A17672A4FA9BAC491652F9 /* [CP] Embed Pods Frameworks */,
+				101987B802499ECEEF4970EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,29 +167,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		61B5A41E62BCA0FDC221D224 /* Copy Pods Resources */ = {
+		03E33A5A941EBE77D891E8A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C75AD32EFCA51D87AAEF9568 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,14 +182,29 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FF8F02A9AED594BE5FB51CEA /* Embed Pods Frameworks */ = {
+		101987B802499ECEEF4970EB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuggyProject/Pods-BuggyProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A17672A4FA9BAC491652F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +330,7 @@
 		};
 		FFEE79111C3DB91100617AE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC08214291AF8FA8D0B0164F /* Pods-BuggyProject.debug.xcconfig */;
+			baseConfigurationReference = 6A4F065FB78AF26FF7C7C8D1 /* Pods-BuggyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BuggyProject/Info.plist;
@@ -343,7 +343,7 @@
 		};
 		FFEE79121C3DB91100617AE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF99B9FBF871463C32120A03 /* Pods-BuggyProject.release.xcconfig */;
+			baseConfigurationReference = 18B45433658D43B219CC1D30 /* Pods-BuggyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BuggyProject/Info.plist;
