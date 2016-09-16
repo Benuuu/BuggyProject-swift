@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        validImageView?.backgroundColor = UIColor.redColor()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.textFieldDidChange(_:)), name: UITextFieldTextDidChangeNotification , object: self.textField);
+        validImageView?.backgroundColor = UIColor.red
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.textFieldDidChange(_:)), name: NSNotification.Name.UITextFieldTextDidChange , object: self.textField);
     }
 
     // MARK: Actions
@@ -32,24 +32,23 @@ class ViewController: UIViewController {
 
     // MARK: Helpers
 
-    func imgurURLRequest() -> NSURLRequest {
+    func imgurURLRequest() -> URLRequest {
         // sample: WPOBwNC
         let urlString = String(format: "http://i.imgur.com/%@.png", (textField?.text)!)
-        return NSURLRequest(URL: NSURL(string: urlString)!)
+        return URLRequest(url: URL(string: urlString)!)
     }
 
-    func isValidString(stringToCheck: String?) -> Bool {
-        let stringLength = stringToCheck?.characters.count
+    func isValidString(_ stringToCheck: String?) -> Bool {
+        guard let stringLength = stringToCheck?.characters.count else { return false }
         return stringLength >= 4 && stringLength <= 7
     }
 
-    func textFieldDidChange(notification: NSNotification) {
+    func textFieldDidChange(_ notification: Notification) {
         if isValidString(self.textField?.text) {
-            validImageView?.backgroundColor = UIColor.greenColor()
+            validImageView?.backgroundColor = UIColor.green
         } else {
-            validImageView?.backgroundColor = UIColor.redColor()
+            validImageView?.backgroundColor = UIColor.red
         }
-        self.textField?.text
     }
 }
 
