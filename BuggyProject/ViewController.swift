@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     // MARK: Helpers
 
     func imgurURLRequest() -> URLRequest {
-        // sample: WPOBwNC
+        // sample: WPOBwNC, u3qrQrH
         let urlString = String(format: "http://i.imgur.com/%@.png", (textField?.text)!)
         return URLRequest(url: URL(string: urlString)!)
     }
