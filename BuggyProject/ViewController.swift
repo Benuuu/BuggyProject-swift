@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     }
 
     // MARK: Actions
-    // TODO: Rename this
     @IBAction func bTap() {
     }
 
