@@ -39,7 +39,8 @@ class ViewController: UIViewController {
     }
 
     func isValidString(_ stringToCheck: String?) -> Bool {
-        guard let stringLength = stringToCheck?.characters.count else { return false }
+        guard let realString = stringToCheck else { return false }
+        let stringLength = realString.count
         return stringLength >= 4 && stringLength <= 7
     }
 
