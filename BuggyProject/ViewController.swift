@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class ViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
 
     // MARK: Actions
     @IBAction func bTap() {
+        imageView?.setImageWith(<#T##url: URL##URL#>, placeholderImage: <#T##UIImage?#>)
     }
 
     @IBAction func searchesTapped() {
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
     func isValidString(_ stringToCheck: String?) -> Bool {
         guard let realString = stringToCheck else { return false }
         let stringLength = realString.count
-        return stringLength >= 4 && stringLength <= 7
+        return stringLength > 4 && stringLength < 7
     }
 
     func textFieldDidChange(_ notification: Notification) {
