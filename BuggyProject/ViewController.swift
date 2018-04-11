@@ -25,7 +25,6 @@ class ViewController: UIViewController {
 
     // MARK: Actions
     @IBAction func bTap() {
-        imageView?.setImageWith(<#T##url: URL##URL#>, placeholderImage: <#T##UIImage?#>)
     }
 
     @IBAction func searchesTapped() {
