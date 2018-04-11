@@ -25,7 +25,6 @@ class ViewController: UIViewController {
 
     // MARK: Actions
     @IBAction func bTap() {
-        imageView?.setImageWith(<#T##url: URL##URL#>, placeholderImage: <#T##UIImage?#>)
     }
 
     @IBAction func searchesTapped() {
@@ -33,10 +32,18 @@ class ViewController: UIViewController {
 
     // MARK: Helpers
 
-    func imgurURLRequest() -> URLRequest {
+    func imgurURLRequest() -> URLRequest? {
         // sample: WPOBwNC, u3qrQrH
-        let urlString = String(format: "http://i.imgur.com/%@.png", (textField?.text)!)
-        return URLRequest(url: URL(string: urlString)!)
+        let urlBaseString = "http://i.imgur.com/"
+        let fileExtension = ".png"
+
+        if let id = textField?.text {
+            let urlString = urlBaseString + id + fileExtension
+            if let url = URL(string: urlString) {
+                return URLRequest(url: url)
+            }
+        }
+        return nil
     }
 
     func isValidString(_ stringToCheck: String?) -> Bool {
